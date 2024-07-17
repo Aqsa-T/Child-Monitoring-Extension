@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "History Tracker",
+    "version": "1.0",
+    "permissions": [
+      "storage",
+      "tabs",
+      "webNavigation",
+      "history"
+    ],
+    "host_permissions": [
+      "*://www.google.com/*",
+      "*://www.bing.com/*",
+      "*://search.yahoo.com/*",
+      "*://*.duckduckgo.com/*" 
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "new.png",
+        "48": "new.png",
+        "128": "new.png"
+      }
+    },
+    "icons": {
+      "16": "new.png",
+      "48": "new.png",
+      "128": "new.png"
+    }
+  }
+  
